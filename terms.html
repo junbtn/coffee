@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 - Sample App</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root {
+      --primary: #7d4a31;
+      --primary-dark: #6B4423;
+      --primary-light: #bfa57f;
+      --main-bg: #f4f2ee;
+      --surface-bg: #f9f8f7;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --white: #ffffff;
+    }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--main-bg);
+      color: var(--gray-700);
+      line-height: 1.8;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 40px 0;
+    }
+
+    .header-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .back-link {
+      color: var(--primary-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-left: auto;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: var(--white);
+    }
+
+    /* Main Content */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .content-card {
+      background-color: var(--white);
+      border-radius: 16px;
+      padding: 48px;
+      box-shadow: 0 4px 12px rgba(125, 74, 49, 0.08);
+    }
+
+    .page-title {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.25rem;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--gray-700);
+    }
+
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--gray-700);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-dark);
+      color: var(--white);
+      padding: 32px 0;
+      margin-top: 48px;
+    }
+
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .footer-links a {
+      color: var(--primary-light);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .copyright {
+      color: var(--primary-light);
+      font-size: 0.875rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .content-card {
+        padding: 32px 24px;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="favicon.svg" alt="Sample App" class="logo">
+      <h1>Sample App</h1>
+      <a href="index.html" class="back-link">トップページへ戻る</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-card">
+      <h1 class="page-title">利用規約</h1>
+      <p class="last-updated">最終更新日: 2025年1月1日</p>
+
+      <p>この利用規約（以下「本規約」）は、Sample App（以下「本アプリ」）の利用条件を定めるものです。ユーザーの皆様には、本規約に同意いただいた上で、本アプリをご利用いただきます。</p>
+
+      <h2>第1条（適用）</h2>
+      <p>本規約は、ユーザーと運営者との間の本アプリの利用に関わる一切の関係に適用されるものとします。</p>
+
+      <h2>第2条（利用登録）</h2>
+      <ol>
+        <li>本アプリの利用を希望する方は、本規約に同意の上、運営者の定める方法によって利用登録を申請し、運営者がこれを承認することによって、利用登録が完了するものとします。</li>
+        <li>運営者は、利用登録の申請者に以下の事由があると判断した場合、利用登録の申請を承認しないことがあります。
+          <ul>
+            <li>利用登録の申請に際して虚偽の事項を届け出た場合</li>
+            <li>本規約に違反したことがある者からの申請である場合</li>
+            <li>その他、運営者が利用登録を相当でないと判断した場合</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>第3条（ユーザーIDおよびパスワードの管理）</h2>
+      <ol>
+        <li>ユーザーは、自己の責任において、本アプリのユーザーIDおよびパスワードを適切に管理するものとします。</li>
+        <li>ユーザーは、いかなる場合にも、ユーザーIDおよびパスワードを第三者に譲渡または貸与し、もしくは第三者と共用することはできません。</li>
+        <li>ユーザーIDとパスワードの組み合わせが登録情報と一致してログインされた場合には、そのユーザーIDを登録しているユーザー自身による利用とみなします。</li>
+      </ol>
+
+      <h2>第4条（禁止事項）</h2>
+      <p>ユーザーは、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
+      <ul>
+        <li>法令または公序良俗に違反する行為</li>
+        <li>犯罪行為に関連する行為</li>
+        <li>運営者、他のユーザー、またはその他第三者のサーバーまたはネットワークの機能を破壊したり、妨害したりする行為</li>
+        <li>運営者のサービスの運営を妨害するおそれのある行為</li>
+        <li>他のユーザーに関する個人情報等を収集または蓄積する行為</li>
+        <li>不正アクセスをし、またはこれを試みる行為</li>
+        <li>他のユーザーに成りすます行為</li>
+        <li>運営者のサービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為</li>
+        <li>その他、運営者が不適切と判断する行為</li>
+      </ul>
+
+      <h2>第5条（本アプリの提供の停止等）</h2>
+      <ol>
+        <li>運営者は、以下のいずれかの事由があると判断した場合、ユーザーに事前に通知することなく本アプリの全部または一部の提供を停止または中断することができるものとします。
+          <ul>
+            <li>本アプリにかかるコンピュータシステムの保守点検または更新を行う場合</li>
+            <li>地震、落雷、火災、停電または天災などの不可抗力により、本アプリの提供が困難となった場合</li>
+            <li>コンピュータまたは通信回線等が事故により停止した場合</li>
+            <li>その他、運営者が本アプリの提供が困難と判断した場合</li>
+          </ul>
+        </li>
+        <li>運営者は、本アプリの提供の停止または中断により、ユーザーまたは第三者が被ったいかなる不利益または損害についても、一切の責任を負わないものとします。</li>
+      </ol>
+
+      <h2>第6条（利用制限および登録抹消）</h2>
+      <ol>
+        <li>運営者は、ユーザーが以下のいずれかに該当する場合には、事前の通知なく、ユーザーに対して、本アプリの全部もしくは一部の利用を制限し、またはユーザーとしての登録を抹消することができるものとします。
+          <ul>
+            <li>本規約のいずれかの条項に違反した場合</li>
+            <li>登録事項に虚偽の事実があることが判明した場合</li>
+            <li>その他、運営者が本アプリの利用を適当でないと判断した場合</li>
+          </ul>
+        </li>
+        <li>運営者は、本条に基づき運営者が行った行為によりユーザーに生じた損害について、一切の責任を負いません。</li>
+      </ol>
+
+      <h2>第7条（退会）</h2>
+      <p>ユーザーは、運営者の定める退会手続により、本アプリから退会できるものとします。</p>
+
+      <h2>第8条（保証の否認および免責事項）</h2>
+      <ol>
+        <li>運営者は、本アプリに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。</li>
+        <li>運営者は、本アプリに起因してユーザーに生じたあらゆる損害について、運営者の故意又は重過失による場合を除き、一切の責任を負いません。</li>
+      </ol>
+
+      <h2>第9条（サービス内容の変更等）</h2>
+      <p>運営者は、ユーザーへの事前の告知をもって、本アプリの内容を変更、追加または廃止することがあり、ユーザーはこれを承諾するものとします。</p>
+
+      <h2>第10条（利用規約の変更）</h2>
+      <ol>
+        <li>運営者は以下の場合には、ユーザーの個別の同意を要せず、本規約を変更することができるものとします。
+          <ul>
+            <li>本規約の変更がユーザーの一般の利益に適合するとき</li>
+            <li>本規約の変更が本アプリ利用契約の目的に反せず、かつ、変更の必要性、変更後の内容の相当性その他の変更に係る事情に照らして合理的なものであるとき</li>
+          </ul>
+        </li>
+        <li>運営者はユーザーに対し、前項による本規約の変更にあたり、事前に、本規約を変更する旨及び変更後の本規約の内容並びにその効力発生時期を通知します。</li>
+      </ol>
+
+      <h2>第11条（個人情報の取扱い）</h2>
+      <p>運営者は、本アプリの利用によって取得する個人情報については、運営者「プライバシーポリシー」に従い適切に取り扱うものとします。</p>
+
+      <h2>第12条（通知または連絡）</h2>
+      <p>ユーザーと運営者との間の通知または連絡は、運営者の定める方法によって行うものとします。運営者は、ユーザーから、運営者が別途定める方式に従った変更届け出がない限り、現在登録されている連絡先が有効なものとみなして当該連絡先へ通知または連絡を行い、これらは、発信時にユーザーへ到達したものとみなします。</p>
+
+      <h2>第13条（権利義務の譲渡の禁止）</h2>
+      <p>ユーザーは、運営者の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し、または担保に供することはできません。</p>
+
+      <h2>第14条（準拠法・裁判管轄）</h2>
+      <ol>
+        <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
+        <li>本アプリに関して紛争が生じた場合には、運営者の本店所在地を管轄する裁判所を専属的合意管轄とします。</li>
+      </ol>
+
+      <p style="margin-top: 32px;">以上</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">トップページ</a>
+        <a href="terms.html">利用規約</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </div>
+      <p class="copyright">&copy; 2025 Sample App. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

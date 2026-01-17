@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - Sample App</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root {
+      --primary: #7d4a31;
+      --primary-dark: #6B4423;
+      --primary-light: #bfa57f;
+      --main-bg: #f4f2ee;
+      --surface-bg: #f9f8f7;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --white: #ffffff;
+    }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--main-bg);
+      color: var(--gray-700);
+      line-height: 1.8;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 40px 0;
+    }
+
+    .header-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .back-link {
+      color: var(--primary-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-left: auto;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: var(--white);
+    }
+
+    /* Main Content */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .content-card {
+      background-color: var(--white);
+      border-radius: 16px;
+      padding: 48px;
+      box-shadow: 0 4px 12px rgba(125, 74, 49, 0.08);
+    }
+
+    .page-title {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.25rem;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--gray-700);
+    }
+
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--gray-700);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+    }
+
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--surface-bg);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-dark);
+      color: var(--white);
+      padding: 32px 0;
+      margin-top: 48px;
+    }
+
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .footer-links a {
+      color: var(--primary-light);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .copyright {
+      color: var(--primary-light);
+      font-size: 0.875rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .content-card {
+        padding: 32px 24px;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="favicon.svg" alt="Sample App" class="logo">
+      <h1>Sample App</h1>
+      <a href="index.html" class="back-link">トップページへ戻る</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-card">
+      <h1 class="page-title">プライバシーポリシー</h1>
+      <p class="last-updated">最終更新日: 2025年1月1日</p>
+
+      <p>Sample App（以下「本アプリ」）は、ユーザーの個人情報の保護を重要視しています。本プライバシーポリシーは、本アプリがどのような情報を収集し、どのように利用・保護するかについて説明します。</p>
+
+      <h2>1. 収集する情報</h2>
+      <p>本アプリでは、以下の情報を収集することがあります。</p>
+
+      <table>
+        <tr>
+          <th>情報の種類</th>
+          <th>収集目的</th>
+        </tr>
+        <tr>
+          <td>メールアドレス</td>
+          <td>アカウント作成・認証、重要なお知らせの送信</td>
+        </tr>
+        <tr>
+          <td>プロフィール情報（ニックネーム等）</td>
+          <td>アプリ内での表示、ユーザー体験の向上</td>
+        </tr>
+        <tr>
+          <td>コーヒー豆・飲み物の記録データ</td>
+          <td>サービスの提供、統計機能の実現</td>
+        </tr>
+        <tr>
+          <td>アップロードされた画像</td>
+          <td>記録への添付、表示</td>
+        </tr>
+        <tr>
+          <td>利用状況データ</td>
+          <td>サービスの改善、不具合の検出</td>
+        </tr>
+      </table>
+
+      <h2>2. 情報の利用目的</h2>
+      <p>収集した情報は、以下の目的で利用します。</p>
+      <ul>
+        <li>本アプリのサービス提供および運営</li>
+        <li>ユーザーサポートおよびお問い合わせへの対応</li>
+        <li>サービスの改善および新機能の開発</li>
+        <li>利用規約違反への対応</li>
+        <li>重要なお知らせやアップデート情報の通知</li>
+        <li>統計データの作成（個人を特定できない形式）</li>
+      </ul>
+
+      <h2>3. 情報の共有</h2>
+      <p>本アプリは、以下の場合を除き、ユーザーの個人情報を第三者と共有することはありません。</p>
+      <ul>
+        <li>ユーザーの同意がある場合</li>
+        <li>法令に基づく開示要請があった場合</li>
+        <li>サービス提供に必要な業務委託先（クラウドサービス事業者等）への提供（適切な契約のもと）</li>
+        <li>人の生命、身体または財産の保護のために必要な場合</li>
+      </ul>
+
+      <h2>4. データの保管とセキュリティ</h2>
+      <p>本アプリは、収集した情報を安全に保管するため、以下の対策を講じています。</p>
+      <ul>
+        <li>データの暗号化通信（SSL/TLS）</li>
+        <li>アクセス制御の実施</li>
+        <li>定期的なセキュリティ監査</li>
+        <li>信頼性の高いクラウドインフラストラクチャの利用</li>
+      </ul>
+      <p>ただし、インターネット上での情報送信は完全に安全とは言えないため、情報の送信はユーザー自身の責任において行ってください。</p>
+
+      <h2>5. データの保持期間</h2>
+      <p>ユーザーのデータは、アカウントが有効な間、またはサービス提供に必要な期間保持されます。アカウント削除後は、法令で定められた期間を除き、合理的な期間内にデータを削除します。</p>
+
+      <h2>6. ユーザーの権利</h2>
+      <p>ユーザーは、以下の権利を有しています。</p>
+      <ul>
+        <li><strong>アクセス権</strong>: 保有する個人情報の開示を請求する権利</li>
+        <li><strong>訂正権</strong>: 誤った情報の訂正を請求する権利</li>
+        <li><strong>削除権</strong>: 個人情報の削除を請求する権利</li>
+        <li><strong>データポータビリティ</strong>: データのエクスポートを請求する権利</li>
+      </ul>
+      <p>これらの権利を行使する場合は、アプリ内の設定画面またはお問い合わせフォームからご連絡ください。</p>
+
+      <h2>7. Cookie およびトラッキング</h2>
+      <p>本アプリのWeb版では、サービス改善のためにCookieや類似の技術を使用することがあります。これらは以下の目的で使用されます。</p>
+      <ul>
+        <li>セッション管理およびログイン状態の維持</li>
+        <li>利用状況の分析</li>
+        <li>サービスの最適化</li>
+      </ul>
+
+      <h2>8. 子どものプライバシー</h2>
+      <p>本アプリは、13歳未満の子どもから意図的に個人情報を収集することはありません。13歳未満の方が本アプリを利用していることが判明した場合は、速やかに当該情報を削除します。</p>
+
+      <h2>9. 外部サービスとの連携</h2>
+      <p>本アプリは、以下の外部サービスを利用しています。これらのサービスのプライバシーポリシーもご確認ください。</p>
+      <ul>
+        <li><strong>Supabase</strong>: データベースおよび認証サービス</li>
+        <li><strong>RevenueCat</strong>: サブスクリプション管理（プレミアム機能利用時）</li>
+      </ul>
+
+      <h2>10. プライバシーポリシーの変更</h2>
+      <p>本プライバシーポリシーは、法令の変更やサービス内容の変更に応じて更新されることがあります。重要な変更がある場合は、アプリ内通知またはメールでお知らせします。</p>
+
+      <h2>11. お問い合わせ</h2>
+      <p>本プライバシーポリシーに関するご質問やお問い合わせは、アプリ内のお問い合わせフォームよりご連絡ください。</p>
+
+      <p style="margin-top: 32px;">以上</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">トップページ</a>
+        <a href="terms.html">利用規約</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </div>
+      <p class="copyright">&copy; 2025 Sample App. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
